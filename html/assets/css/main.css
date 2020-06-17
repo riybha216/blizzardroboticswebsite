@@ -11,6 +11,11 @@
 		vertical-align: baseline;
 	}
 
+	@font-face {
+		font-family: 'op';
+		src: URL('op.tff') format('truetype');
+	  }
+
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
@@ -3430,7 +3435,7 @@
 			padding: 0;
 			position: absolute;
 			top: 0;
-			font-family: 'Bai Jamjuree';
+			font-family: 'op', 'Bai Jamjuree';
 		}
 
 			#header > .logo a {
