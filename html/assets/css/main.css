@@ -9,7 +9,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
-		cursor: url(logo.cur), crosshair;
+		cursor: url(logo.cur), crosshair, auto;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -1888,7 +1888,6 @@
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		border-radius: 4px;
 		border: 0;
-		cursor: pointer;
 		display: inline-block;
 		font-weight: 400;
 		height: 2.85rem;
