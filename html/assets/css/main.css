@@ -46,6 +46,48 @@
 		-webkit-text-size-adjust: none;
 	}
 
+	.splash{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background: black;
+		z-index: 200;
+		color: white;
+		text-align: center;
+		line-height: 90vh;
+	}
+	
+	.splash.display-none{
+		position: fixed;
+		opacity: 0;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background: black;
+		z-index: -10;
+		color: white;
+		text-align: center;
+		line-height: 90vh;
+		transition: all 1s;
+	}
+
+	@keyframes fadeIn{
+		to{
+			opacity: 1;
+
+		}
+	}
+
+	.fade-in{
+		opacity: 0;
+		animation: fadeIn 1s ease-in forwards;
+	}
+
+
+
 /* Box Model */
 
 	*, *:before, *:after {
@@ -3436,6 +3478,7 @@
 			position: absolute;
 			top: 0;
 			font-family: 'op', 'Bai Jamjuree';
+			font-style: normal;
 		}
 
 			#header > .logo a {
