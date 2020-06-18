@@ -9,8 +9,13 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
-		cursor: url(logo.cur), crosshair, auto;
 	}
+
+@font-face {
+		font-family: 'op';
+		src: URL('op.tff') format('truetype');
+	  }
+
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
@@ -41,15 +46,6 @@
 	body {
 		-webkit-text-size-adjust: none;
 	}
-
-	.center {
-		display: block;
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		width: 20%;
-		transform: translate(-50%, -50%);
-	  }
 
 /* Box Model */
 
@@ -84,7 +80,7 @@
 		color: white;
 		text-align: center;
 		line-height: 90vh;
-		transition: all 0.8s;
+		transition: all 1s;
 	}
 
 	@keyframes fadeIn{
@@ -98,6 +94,7 @@
 		opacity: 0;
 		animation: fadeIn 1s ease-in forwards;
 	}
+
 
 /* Containers */
 
@@ -1888,6 +1885,7 @@
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		border-radius: 4px;
 		border: 0;
+		cursor: pointer;
 		display: inline-block;
 		font-weight: 400;
 		height: 2.85rem;
@@ -2909,7 +2907,7 @@
 
 		.wrapper.style2 {
 			background-color: #f2f2f2;
-			color: #000;
+			color: #a6a6a6;
 		}
 
 			.wrapper.style2 input, .wrapper.style2 select, .wrapper.style2 textarea {
@@ -3118,7 +3116,7 @@
 		.wrapper.style3 {
 			background-color: #000;
 			color: #bfbfbf;
-			background-image: url(../../images/banner.jpg);
+			background-image: url(../../images/snowpicture.png);
 			background-size: cover;
 			background-attachment: fixed;
 			background-position: center;
@@ -3440,6 +3438,8 @@
 		}
 	}
 
+
+
 	@keyframes reveal-header {
 		0% {
 			top: -4em;
@@ -3464,6 +3464,7 @@
 		top: 0;
 		width: 100%;
 		z-index: 10001;
+        font-family: 'op', 'Bai Jamjuree';
 	}
 
 		#header .toggle span {
@@ -3479,7 +3480,6 @@
 			padding: 0;
 			position: absolute;
 			top: 0;
-			font-family: 'Bai Jamjuree';
 		}
 
 			#header > .logo a {
@@ -3760,11 +3760,9 @@
 		background-repeat: no-repeat;
 		border-top: 0;
 		min-height: 100vh;
-        min-width: 100vh;
-		height: 100vh;
+		height: 100vh !important;
 		width: 100%;
-        object-fit: cover;		
-        position: relative;
+		position: relative;
 		text-align: center;
 		overflow: hidden;
 	}
@@ -3781,8 +3779,6 @@
 			opacity: 1;
 			position: relative;
 			z-index: 2;
-            
-            
 		}
 
 		#banner h1 {
@@ -3815,11 +3811,6 @@
 			min-width: 100%;
 			min-height: 100%;
 			overflow: hidden;
-            left: 50%;
-            min-height: 100%;
-            min-width: 100%;
-            top: 50%;
-            transform: translate(-50%, -50%);
 		}
 
 		#banner:before {
@@ -4279,36 +4270,20 @@
 
 		}
 
-		img {
-			-webkit-user-drag: none;
-			-khtml-user-drag: none;
-			-moz-user-drag: none;
-			-o-user-drag: none;
-			user-drag: none;
-		  }
 
-		.noselect {
-			-webkit-touch-callout: none; /* iOS Safari */
-			  -webkit-user-select: none; /* Safari */
-			   -khtml-user-select: none; /* Konqueror HTML */
-				 -moz-user-select: none; /* Old versions of Firefox */
-				  -ms-user-select: none; /* Internet Explorer/Edge */
-					  user-select: none; /* Non-prefixed version, currently
-											supported by Chrome, Edge, Opera and Firefox */
-		  }
 
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
   color: #fff;
-  font-family: 'Bai Jamjuree';
+  font-family: fantasy;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid lightskyblue; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.02em; /* Adjust as needed */
   animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+    typing 3.5s steps(60, end),
+    blink-caret .5s step-end;
 }
 
 /* The typing effect */
@@ -4317,8 +4292,95 @@
   to { width: 100% }
 }
 
+img {
+			-webkit-user-drag: none;
+			-khtml-user-drag: none;
+			-moz-user-drag: none;
+			-o-user-drag: none;
+			user-drag: none;
+		  }
+
+
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: lightskyblue}
+}
+
+.team .member {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.team .member .pic {
+  overflow: hidden;
+}
+
+.team .member .member-info {
+  position: absolute;
+  top: 85%;
+  left: 20px;
+  right: 20px;
+  background: #fff;
+  padding: 20px 0;
+  color: #2f4d5a;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  max-height: 95px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.team .member:hover .member-info {
+  max-height: 300px;
+}
+
+.team .member h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #2f4d5a;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.team .member h4::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #b1cbd7;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+.team .member .social {
+  margin-top: 15px;
+}
+
+.team .member .social a {
+  transition: color 0.3s;
+  color: #52869d;
+}
+
+.team .member .social a:hover {
+  color: #67b0d1;
+}
+
+.team .member .social i {
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+@media (max-width: 992px) {
+  .team .member {
+    margin-bottom: 110px;
+  }
 }
