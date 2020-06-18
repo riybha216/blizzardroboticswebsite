@@ -11,11 +11,6 @@
 		vertical-align: baseline;
 	}
 
-	@font-face {
-		font-family: 'op';
-		src: URL('op.tff') format('truetype');
-	  }
-
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
@@ -46,7 +41,15 @@
 		-webkit-text-size-adjust: none;
 	}
 
-	.splash{
+/* Box Model */
+
+	*, *:before, *:after {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+.splash{
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -57,9 +60,8 @@
 		color: white;
 		text-align: center;
 		line-height: 90vh;
-		z-index: 5000;
 	}
-	
+
 	.splash.display-none{
 		position: fixed;
 		opacity: 0;
@@ -73,7 +75,6 @@
 		text-align: center;
 		line-height: 90vh;
 		transition: all 1s;
-		z-index: 0;
 	}
 
 	@keyframes fadeIn{
@@ -88,15 +89,6 @@
 		animation: fadeIn 1s ease-in forwards;
 	}
 
-
-
-/* Box Model */
-
-	*, *:before, *:after {
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-	}
 
 /* Containers */
 
@@ -3118,7 +3110,7 @@
 		.wrapper.style3 {
 			background-color: #000;
 			color: #bfbfbf;
-			background-image: url(../../images/snow-11.gif);
+			background-image: url(../../images/banner.jpg);
 			background-size: cover;
 			background-attachment: fixed;
 			background-position: center;
@@ -3463,7 +3455,7 @@
 		text-align: right;
 		top: 0;
 		width: 100%;
-		z-index: 50;
+		z-index: 10001;
 	}
 
 		#header .toggle span {
@@ -3479,8 +3471,6 @@
 			padding: 0;
 			position: absolute;
 			top: 0;
-			font-family: 'op', 'Bai Jamjuree';
-			font-style: normal;
 		}
 
 			#header > .logo a {
@@ -3755,15 +3745,17 @@
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		background-image: url("../../images/snow-11.gif");
+		background-image: url("../../images/snowpicture.png");
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
 		border-top: 0;
 		min-height: 100vh;
-		height: 100vh !important;
+        min-width: 100vh;
+		height: 100vh;
 		width: 100%;
-		position: relative;
+        object-fit: cover;		
+        position: relative;
 		text-align: center;
 		overflow: hidden;
 	}
@@ -3780,6 +3772,8 @@
 			opacity: 1;
 			position: relative;
 			z-index: 2;
+            
+            
 		}
 
 		#banner h1 {
@@ -3812,6 +3806,11 @@
 			min-width: 100%;
 			min-height: 100%;
 			overflow: hidden;
+            left: 50%;
+            min-height: 100%;
+            min-width: 100%;
+            top: 50%;
+            transform: translate(-50%, -50%);
 		}
 
 		#banner:before {
@@ -4270,3 +4269,29 @@
 			}
 
 		}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #fff;
+  font-family: fantasy;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid lightskyblue; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.02em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: lightskyblue}
+}
