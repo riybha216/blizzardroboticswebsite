@@ -38,10 +38,37 @@
 				</div>
                     </div>
 			</section>
-    
+	
+			<script>
+				var looper;
+				var degrees = 0;
+				function rotateAnimation(el,speed){
+					var elem = document.getElementById(el);
+					if(navigator.userAgent.match("Chrome")){
+						elem.style.WebkitTransform = "rotate("+degrees+"deg)";
+					} else if(navigator.userAgent.match("Firefox")){
+						elem.style.MozTransform = "rotate("+degrees+"deg)";
+					} else if(navigator.userAgent.match("MSIE")){
+						elem.style.msTransform = "rotate("+degrees+"deg)";
+					} else if(navigator.userAgent.match("Opera")){
+						elem.style.OTransform = "rotate("+degrees+"deg)";
+					} else {
+						elem.style.transform = "rotate("+degrees+"deg)";
+					}
+					looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed);
+					degrees++;
+					if(degrees > 359){
+						degrees = 1;
+					}
+					document.getElementById("status").innerHTML = "rotate("+degrees+"deg)";
+				}
+				</script>
+
     <div class="splash">
-				<h1 class="fade-in"><img src="logo.png" class="center"></h1>
+				<h1><img id="sples" src="logo.png" class="center"></h1>
 			</div>
+
+			<script>rotateAnimation("sples", 15);</script>
 
 		<!-- One -->
 			<section id="one" class="wrapper style2">

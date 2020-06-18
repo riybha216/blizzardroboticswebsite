@@ -44,8 +44,8 @@
 	.center {
 		display: block;
 		position: fixed;
-		top: 50%;
-		left: 50%;
+		top: 40%;
+		left: 40%;
 		width: 20%;
 		transform: translate(-50%, -50%);
 	  }
