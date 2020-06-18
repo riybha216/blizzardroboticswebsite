@@ -44,8 +44,8 @@
 	.center {
 		display: block;
 		position: fixed;
-		top: 40%;
-		left: 40%;
+		top: 50%;
+		left: 50%;
 		width: 20%;
 		transform: translate(-50%, -50%);
 	  }
@@ -83,7 +83,7 @@
 		color: white;
 		text-align: center;
 		line-height: 90vh;
-		transition: all 1s;
+		transition: all 0.8s;
 	}
 
 	@keyframes fadeIn{
