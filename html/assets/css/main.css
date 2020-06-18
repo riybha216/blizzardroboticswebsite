@@ -73,7 +73,7 @@
 		text-align: center;
 		line-height: 90vh;
 		transition: all 1s;
-		z-index: 4999;
+		z-index: 0;
 	}
 
 	@keyframes fadeIn{
