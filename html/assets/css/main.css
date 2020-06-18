@@ -4283,7 +4283,7 @@
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
   color: #fff;
-  font-family: fantasy;
+  font-family: 'Bai Jamjuree';
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid lightskyblue; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
