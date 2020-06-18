@@ -57,6 +57,7 @@
 		color: white;
 		text-align: center;
 		line-height: 90vh;
+		z-index: 5000;
 	}
 	
 	.splash.display-none{
@@ -72,6 +73,7 @@
 		text-align: center;
 		line-height: 90vh;
 		transition: all 1s;
+		z-index: 4999;
 	}
 
 	@keyframes fadeIn{
@@ -3461,7 +3463,7 @@
 		text-align: right;
 		top: 0;
 		width: 100%;
-		z-index: 10001;
+		z-index: 50;
 	}
 
 		#header .toggle span {
