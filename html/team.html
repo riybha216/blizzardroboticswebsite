@@ -38,28 +38,32 @@ html {
   margin-left: 16px;
   margin-right: 16px;
   margin-bottom: 16px;
-  padding: 0 8px;
+  padding: 8px;
 }
 
 @media screen and (max-width: 400px) {
   .column {
     width: 100%;
     display: block;
+    margin: auto;
   }
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
 }
 
 .container {
-  padding: 0 8px;
+  padding: 8px;
+  margin: auto;
 }
 
 .container::after, .row::after {
   content: "";
   clear: both;
   display: table;
+  margin: auto;
 }
 
 .title {

@@ -9,6 +9,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		cursor: url(logo.cur), crosshair;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -97,7 +98,6 @@
 		opacity: 0;
 		animation: fadeIn 1s ease-in forwards;
 	}
-
 
 /* Containers */
 
@@ -4279,6 +4279,16 @@
 			}
 
 		}
+
+		.noselect {
+			-webkit-touch-callout: none; /* iOS Safari */
+			  -webkit-user-select: none; /* Safari */
+			   -khtml-user-select: none; /* Konqueror HTML */
+				 -moz-user-select: none; /* Old versions of Firefox */
+				  -ms-user-select: none; /* Internet Explorer/Edge */
+					  user-select: none; /* Non-prefixed version, currently
+											supported by Chrome, Edge, Opera and Firefox */
+		  }
 
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
