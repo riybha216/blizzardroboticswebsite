@@ -17,6 +17,15 @@
 		src: URL('op.tff') format('truetype');
 	  }
 
+	  .noselect {
+		-webkit-touch-callout: none; /* iOS Safari */
+		  -webkit-user-select: none; /* Safari */
+		   -khtml-user-select: none; /* Konqueror HTML */
+			 -moz-user-select: none; /* Firefox */
+			  -ms-user-select: none; /* Internet Explorer/Edge */
+				  user-select: none; /* Non-prefixed version, currently
+										supported by Chrome and Opera */
+	  }
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
@@ -2712,7 +2721,7 @@
 
 		.wrapper.style1 {
 			background-color: #5AA6ED;
-			color: #d6e9fb;
+			color: #dfefff;
 		}
 
 			.wrapper.style1 input, .wrapper.style1 select, .wrapper.style1 textarea {
