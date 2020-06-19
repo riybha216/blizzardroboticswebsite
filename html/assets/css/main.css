@@ -7,6 +7,7 @@
 		padding: 0;
 		border: 0;
 		font-size: 100%;
+		font-family: "Bai Jamjuree";
 		font: inherit;
 		vertical-align: baseline;
         cursor: url(logo.cur), crosshair, auto;
@@ -66,6 +67,14 @@
 		transform: translate(-50%, -50%);
 	  }
 
+	  .transition-fade {
+		  opacity: 1;
+		  transition: 400ms;
+	  }
+
+	  html.is-animating .transition-fade {
+		  opacity: 0;
+	  }
 
 /* Box Model */
 
