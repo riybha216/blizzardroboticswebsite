@@ -13,7 +13,7 @@
 document.addEventListener('DOMContentLoaded', (e)=>{
 	setTimeout(()=>{
 		splash.classList.add('display-none');
-	}, 1800);
+	}, 1400);
 })
 
 	$(function() {
