@@ -18,15 +18,16 @@
 		src: URL('op.tff') format('truetype');
 	  }
 
-	  .noselect {
-		-webkit-touch-callout: none; /* iOS Safari */
-		  -webkit-user-select: none; /* Safari */
-		   -khtml-user-select: none; /* Konqueror HTML */
-			 -moz-user-select: none; /* Firefox */
-			  -ms-user-select: none; /* Internet Explorer/Edge */
-				  user-select: none; /* Non-prefixed version, currently
-										supported by Chrome and Opera */
-	  }
+	.noselect {
+        	-webkit-touch-callout: none; /* iOS Safari /
+          	-webkit-user-select: none; / Safari /
+           	-khtml-user-select: none; / Konqueror HTML /
+             	-moz-user-select: none; / Firefox /
+              	-ms-user-select: none; / Internet Explorer/Edge /
+                  user-select: none; / Non-prefixed version, currently
+                                        supported by Chrome and Opera */
+      }
+
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
@@ -2733,7 +2734,7 @@
 
 		.wrapper.style1 {
 			background-color: #5AA6ED;
-			color: #dfefff;
+			color: #d6e9fb;
 		}
 
 			.wrapper.style1 input, .wrapper.style1 select, .wrapper.style1 textarea {
@@ -4342,6 +4343,19 @@ img {
   50% { border-color: lightskyblue}
 }
 
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
 .team .member {
   text-align: center;
   margin-bottom: 80px;
@@ -4417,5 +4431,24 @@ img {
 @media (max-width: 992px) {
   .team .member {
     margin-bottom: 110px;
+  }
+}
+
+  .responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
   }
 }
