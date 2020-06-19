@@ -7,6 +7,7 @@
 		padding: 0;
 		border: 0;
 		font-size: 100%;
+		font-family: "Bai Jamjuree";
 		font: inherit;
 		vertical-align: baseline;
         cursor: url(logo.cur), crosshair, auto;
@@ -30,6 +31,8 @@
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
+		font-family: "Bam Jamjuree";
+
 	}
 
 	body {
@@ -67,6 +70,14 @@
 		transform: translate(-50%, -50%);
 	  }
 
+	  .transition-fade {
+		  opacity: 1;
+		  transition: 400ms;
+	  }
+
+	  html.is-animating .transition-fade {
+		  opacity: 0;
+	  }
 
 /* Box Model */
 
@@ -2592,6 +2603,7 @@
 
 	section.special, article.special {
 		text-align: center;
+		font-family: "Bam Jamjuree";
 	}
 
 	header p {
@@ -4356,11 +4368,11 @@ img {
 
 .team .member .member-info {
   position: absolute;
-  top: 85%;
+  top: 88%;
   left: 20px;
   right: 20px;
   background: #fff;
-  padding: 20px 0;
+  padding: 8px 0;
   color: #2f4d5a;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   max-height: 95px;
