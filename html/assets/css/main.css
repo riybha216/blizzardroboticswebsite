@@ -30,6 +30,8 @@
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
+		font-family: "Bam Jamjuree";
+
 	}
 
 	body {
@@ -2600,6 +2602,7 @@
 
 	section.special, article.special {
 		text-align: center;
+		font-family: "Bam Jamjuree";
 	}
 
 	header p {
