@@ -9,12 +9,20 @@
 	});
     
     const splash = document.querySelector('.splash');
+    const lilsplash = document.querySelector('.lilsplash');
 
 document.addEventListener('DOMContentLoaded', (e)=>{
 	setTimeout(()=>{
 		splash.classList.add('display-none');
 	}, 2000);
 })
+
+document.addEventListener('DOMContentLoaded', (e)=>{
+	setTimeout(()=>{
+		lilsplash.classList.add('display-none');
+	}, 300);
+})
+
 
 	$(function() {
 
