@@ -10,7 +10,7 @@
 		font-family: "Bai Jamjuree";
 		font: inherit;
 		vertical-align: baseline;
-        cursor: url(logo.cur), crosshair, auto;
+		cursor: url(logo.cur), crosshair, auto;
 	}
 
 @font-face {
@@ -102,6 +102,36 @@
 	}
 
 	.splash.display-none{
+		position: fixed;
+		opacity: 0;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background: black;
+		z-index: -10;
+		color: white;
+		text-align: center;
+		line-height: 90vh;
+		transition: all 0.8s;
+        z-index: 0;
+	}
+
+	.lilsplash{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background: black;
+		z-index: 200;
+		color: white;
+		text-align: center;
+		line-height: 90vh;
+        z-index: 5000;
+	}
+
+	.lilsplash.display-none{
 		position: fixed;
 		opacity: 0;
 		top: 0;

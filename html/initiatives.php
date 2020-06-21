@@ -17,7 +17,7 @@ require '../templates/header.php';
                 <hr/>
                 <p style="font-family: 'Bai Jamjuree';"> Blizzard Robotics is committed to improving our community,
                     whether it be through connecting with industry professionals or spreading our knowledge. After
-                    visiting many currently-open buisnesses such as dentists, doctors, orthodontists, we decided to
+                    visiting many currently-open businesses such as dentists, doctors, orthodontists, we decided to
                     create door handles to be opened using one's arm. This allowed the transmission of infection to be
                     greatly lessened due to the elimination of a very commonly shared surface.
 
