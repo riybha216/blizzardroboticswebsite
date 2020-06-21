@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', (e)=>{
 document.addEventListener('DOMContentLoaded', (e)=>{
 	setTimeout(()=>{
 		lilsplash.classList.add('display-none');
-	}, 300);
+	}, 400);
 })
 
 
