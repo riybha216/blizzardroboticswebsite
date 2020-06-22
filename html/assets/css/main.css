@@ -35,8 +35,11 @@
 
 	}
 
+
+
 	body {
 		line-height: 1;
+		cursor: url('logo.cur'), crosshair;
 	}
 
 	ol, ul {
