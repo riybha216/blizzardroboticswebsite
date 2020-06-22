@@ -2976,7 +2976,7 @@
 			}
 
 		.wrapper.style2 {
-			background-color: #f2f2f2;
+			background-color: rgb(244, 251, 255);
 			color: #a6a6a6;
 		}
 
@@ -3061,7 +3061,7 @@
 				.wrapper.style2 input[type="button"].special,
 				.wrapper.style2 button.special,
 				.wrapper.style2 .button.special {
-					background-color: #5AA6ED;
+					background-color: #000000;
 					color: #ffffff !important;
 				}
 
