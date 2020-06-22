@@ -23,6 +23,15 @@ document.addEventListener('DOMContentLoaded', (e)=>{
 	}, 500);
 })
 
+function imajsh() {
+	var x = document.getElementById("imaj");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+
 function myFunction(imgs) {
 	// Get the expanded image
 	var expandImg = document.getElementById("expandedImg");
