@@ -1953,7 +1953,7 @@
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		border-radius: 4px;
-		border: 0;
+		border: 20;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 400;
@@ -3917,7 +3917,7 @@
 
 			#banner {
 				min-height: 0;
-				height: auto !important;
+				background-attachment: fixed;
 				padding: 6rem 2rem 4rem 2rem;
 			}
 
