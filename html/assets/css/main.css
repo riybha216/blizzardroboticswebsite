@@ -35,7 +35,9 @@
 
 	}
 
-
+	.fade {
+		opacity: 1;
+	  }
 
 	body {
 		line-height: 1;
