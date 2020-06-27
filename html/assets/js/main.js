@@ -1,3 +1,5 @@
+// $('#myTurntable').turntable();
+
 $(window).on("load",function() {
 	function fade(pageLoad) {
 	  var windowBottom = $(window).scrollTop() + $(window).innerHeight();
