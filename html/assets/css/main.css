@@ -1754,6 +1754,16 @@
 			}
 
 		}
+		
+		::-moz-selection { /* Code for Firefox */
+			color: #439aea;
+			background: black;
+		  }
+		  
+		  ::selection {
+			color: #439aea;
+			background: black;
+		  }
 
 	body {
 		background-color: #fff;
