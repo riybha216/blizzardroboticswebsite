@@ -1754,7 +1754,28 @@
 			}
 
 		}
+				/* width */
+		::-webkit-scrollbar {
+		  width: 6px;
+		}
 		
+		/* Track */
+		::-webkit-scrollbar-track {
+		  background-color:rgb(0, 0, 0);
+		  border-radius: 10px;
+		}
+		 
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+		  background: #5AA6ED; 
+		  border-radius: 10px;
+		}
+		
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+		  background:#bddbf8; 
+		}
+
 		::-moz-selection { /* Code for Firefox */
 			color: #439aea;
 			background: black;
