@@ -10,7 +10,7 @@
 		font-family: "Bai Jamjuree";
 		font: inherit;
 		vertical-align: baseline;
-		cursor: url(logo.cur), crosshair, auto;
+		cursor: crosshair, auto;
 	}
 
 @font-face {
@@ -3037,7 +3037,7 @@
 			}
 
 		.wrapper.style2 {
-			background-color: rgb(244, 251, 255);
+			background-color: black;
 			color: #a6a6a6;
 		}
 
