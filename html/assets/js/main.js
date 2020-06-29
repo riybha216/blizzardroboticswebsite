@@ -3,7 +3,7 @@
 $(window).on("load",function() {
 	function fade(pageLoad) {
 	  var windowBottom = $(window).scrollTop() + $(window).innerHeight();
-	  var min = 0.4;
+	  var min = 0.6;
 	  var max = 1;
 	  var threshold = 0.01;
 	  
@@ -15,7 +15,7 @@ $(window).on("load",function() {
 		if (objectBottom < windowBottom) { //object comes into view (scrolling down)
 		  if ($(this).css("opacity")<=min+threshold || pageLoad) {$(this).fadeTo(500,max);}
 		} else { //object goes out of view (scrolling up)
-		  if ($(this).css("opacity")>=max-threshold || pageLoad) {pass}
+		  if ($(this).css("opacity")>=max-threshold || pageLoad) {$(this).fadeTo(500,min);}
 		}
 	  });
 	} fade(true); //fade elements on page-load
