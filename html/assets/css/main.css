@@ -3380,7 +3380,7 @@
 			  </style>
 
 		.wrapper.style3 {
-			background-color: #000;
+			background: #000;
 			color: #bfbfbf;
 			background-image: url(../../images/snowpicture.png);
 			background-size: cover;
