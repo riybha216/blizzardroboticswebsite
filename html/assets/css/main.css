@@ -3380,7 +3380,7 @@
 			  </style>
 
 		.wrapper.style3 {
-			background: #000;
+			background: rgb(0, 0, 0);
 			color: #bfbfbf;
 			background-image: url(../../images/snowpicture.png);
 			background-size: cover;
@@ -4022,6 +4022,7 @@
 		-ms-justify-content: center;
 		justify-content: center;
 		background-image: url("../../images/snowpicture.png");
+		background-attachment: fixed;
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
