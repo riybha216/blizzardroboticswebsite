@@ -2838,7 +2838,11 @@
 		}
 
 		.wrapper.style1 {
-			background-color: #5AA6ED;
+			background-image: url("../../images/");
+		background-attachment: fixed;
+		background-position: center;
+		background-size: cover;
+            position: relative;
 			color: #d6e9fb;
 		}
 
@@ -3381,12 +3385,19 @@
 
 		.wrapper.style3 {
 			background: rgb(0, 0, 0);
-			color: #bfbfbf;
-			background-image: url(../../images/snowpicture.png);
-			background-size: cover;
-			background-attachment: fixed;
-			background-position: center;
-			position: relative;
+			color: white;
+            background-image: url("../../images/bleeeza.jpg");
+		background-attachment: fixed;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-top: 0;
+		min-height: 100vh;
+		height: 100vh !important;
+		width: 100%;
+		position: relative;
+		text-align: center;
+		overflow: hidden;
 		}
 
 			.wrapper.style3 input, .wrapper.style3 select, .wrapper.style3 textarea {
@@ -3428,7 +3439,7 @@
 			.wrapper.style3 button,
 			.wrapper.style3 .button {
 				background-color: #f2f2f2;
-				color: #000 !important;
+				color: white !important;
 			}
 
 				.wrapper.style3 input[type="submit"]:hover,
@@ -3478,7 +3489,7 @@
 					.wrapper.style3 input[type="button"].alt.icon:before,
 					.wrapper.style3 button.alt.icon:before,
 					.wrapper.style3 .button.alt.icon:before {
-						color: #999999;
+						color: black;
 					}
 
 				.wrapper.style3 input[type="submit"].special,
@@ -3557,23 +3568,23 @@
 			}
 
 			.wrapper.style3 ::-webkit-input-placeholder {
-				color: #999999 !important;
+				color: black !important;
 			}
 
 			.wrapper.style3 :-moz-placeholder {
-				color: #999999 !important;
+				color: black !important;
 			}
 
 			.wrapper.style3 ::-moz-placeholder {
-				color: #999999 !important;
+				color: black !important;
 			}
 
 			.wrapper.style3 :-ms-input-placeholder {
-				color: #999999 !important;
+				color: black !important;
 			}
 
 			.wrapper.style3 .formerize-placeholder {
-				color: #999999 !important;
+				color: black !important;
 			}
 
 			.wrapper.style3 ul.alt li {
@@ -3581,7 +3592,7 @@
 			}
 
 			.wrapper.style3 header p {
-				color: #999999;
+				color: black;
 			}
 
 			.wrapper.style3 table tbody tr {
@@ -4021,7 +4032,7 @@
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		background-image: url("../../images/snowpicture.png");
+		background-image: url("../../images/bleeeza.jpg");
 		background-attachment: fixed;
 		background-position: center;
 		background-size: cover;
