@@ -133,12 +133,11 @@
 		height: 100vh;
 		overflow: hidden;
 		background: black;
-		z-index: -10;
+		z-index: -100;
 		color: white;
 		text-align: center;
 		line-height: 90vh;
 		transition: all 0.8s;
-        z-index: 0;
 	}
 
 	.lilsplash{
@@ -163,11 +162,12 @@
 		width: 100%;
 		height: 100vh;
 		background: black;
-		z-index: -100;
+		z-index: -10;
 		color: white;
 		text-align: center;
 		line-height: 90vh;
 		transition: all 0.8s;
+        z-index: 0;
 	}
 
 	@keyframes fadeIn{F
@@ -2837,28 +2837,28 @@
 		}
 
 		.wrapper.style1 {
-			background-image: url("../../images/");
+			background-image: url("../../images/coolbackground.png");
 		background-attachment: fixed;
 		background-position: center;
 		background-size: cover;
             position: relative;
-			color: #d6e9fb;
+			color: black;
 		}
 
 			.wrapper.style1 input, .wrapper.style1 select, .wrapper.style1 textarea {
-				color: #ffffff;
+				color: black;
 			}
 
 			.wrapper.style1 a {
-				color: #ffffff;
+				color: black;
 			}
 
 			.wrapper.style1 strong, .wrapper.style1 b {
-				color: #ffffff;
+				color: black;
 			}
 
 			.wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6 {
-				color: #ffffff;
+				color: black;
 			}
 
 			.wrapper.style1 blockquote {
@@ -2934,7 +2934,7 @@
 					.wrapper.style1 input[type="button"].alt.icon:before,
 					.wrapper.style1 button.alt.icon:before,
 					.wrapper.style1 .button.alt.icon:before {
-						color: #bddbf8;
+						color: black;
 					}
 
 				.wrapper.style1 input[type="submit"].special,
@@ -2974,7 +2974,7 @@
 
 			.wrapper.style1 input[type="checkbox"] + label,
 			.wrapper.style1 input[type="radio"] + label {
-				color: #d6e9fb;
+				color: black;
 			}
 
 				.wrapper.style1 input[type="checkbox"] + label:before,
@@ -2992,28 +2992,28 @@
 
 			.wrapper.style1 input[type="checkbox"]:focus + label:before,
 			.wrapper.style1 input[type="radio"]:focus + label:before {
-				border-color: #ffffff;
+				border-color: black;
 				box-shadow: 0 0 0 1px #ffffff;
 			}
 
 			.wrapper.style1 ::-webkit-input-placeholder {
-				color: #bddbf8 !important;
+				color: black !important;
 			}
 
 			.wrapper.style1 :-moz-placeholder {
-				color: #bddbf8 !important;
+				color: black !important;
 			}
 
 			.wrapper.style1 ::-moz-placeholder {
-				color: #bddbf8 !important;
+				color: black !important;
 			}
 
 			.wrapper.style1 :-ms-input-placeholder {
-				color: #bddbf8 !important;
+				color: black !important;
 			}
 
 			.wrapper.style1 .formerize-placeholder {
-				color: #bddbf8 !important;
+				color: black !important;
 			}
 
 			.wrapper.style1 ul.alt li {
@@ -3021,7 +3021,7 @@
 			}
 
 			.wrapper.style1 header p {
-				color: #bddbf8;
+				color: black;
 			}
 
 			.wrapper.style1 table tbody tr {
@@ -3033,7 +3033,7 @@
 				}
 
 			.wrapper.style1 table th {
-				color: #ffffff;
+				color: black;
 			}
 
 			.wrapper.style1 table thead {
@@ -3271,7 +3271,7 @@
 			  }
 			  
 			  .fa-facebook {
-				background: #439aea;
+				background: #3B5998;
 				color: white;
 			  }
 			  
@@ -3291,12 +3291,12 @@
 			  }
 			  
 			  .fa-youtube {
-				background: #439aea;
+				background: #bb0000;
 				color: white;
 			  }
 			  
 			  .fa-instagram {
-				background: #439aea;;
+				background: #125688;
 				color: white;
 			  }
 			  
@@ -4303,7 +4303,7 @@
 				-ms-justify-content: center;
 				justify-content: center;
 				font-size: 3.5rem;
-				background: #fff;
+				background: black;
 				color: #5AA6ED;
 				width: 8rem;
 				height: 8rem;
