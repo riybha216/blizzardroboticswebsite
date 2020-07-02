@@ -11,6 +11,7 @@
 		font: inherit;
 		vertical-align: baseline;
 		cursor: crosshair, auto;
+		
 	}
 
 @font-face {
@@ -40,7 +41,8 @@
 
 	body {
 		line-height: 1;
-		cursor: url('logo.cur'), crosshair;
+		cursor: crosshair;
+		overflow-x: hidden;
 	}
 
 	ol, ul {
