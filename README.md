@@ -1,2 +1,0 @@
-# Blizzard Robotics Website
-
