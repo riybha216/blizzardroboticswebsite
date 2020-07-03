@@ -2827,6 +2827,15 @@
 
 /* Wrapper */
 
+.botlefyt {
+	position: absolute;
+left: 0px;
+bottom: 0px;
+width: auto;
+height: 0px;
+overflow: hidden;
+}
+
 	.wrapper {
 		padding: 6rem 0 4rem 0 ;
 		position: relative;
@@ -2839,12 +2848,12 @@
 		}
 
 		.wrapper.style1 {
-			background-image: url("../../images/coolbackground.png");
+			background-image: url("https://images.wallpaperscraft.com/image/mountains_starry_sky_night_135568_3840x2160.jpg");
 		background-attachment: fixed;
 		background-position: center;
 		background-size: cover;
             position: relative;
-			color: black;
+			color: white;		
 		}
 
 			.wrapper.style1 input, .wrapper.style1 select, .wrapper.style1 textarea {
@@ -4033,7 +4042,7 @@
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		background-image: url("../../images/bleeeza.jpg");
+		background-image: url("../../images/daddy.png");
 		background-attachment: fixed;
 		background-position: center;
 		background-size: cover;
