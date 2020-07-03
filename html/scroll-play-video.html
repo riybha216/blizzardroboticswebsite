@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script>
+	function scrollVideo() {
+	  var video = $('#video').get(0),
+	    videoLength = video.duration,
+	    scrollPosition = $(document).scrollTop();
+	  
+	  video.currentTime = (scrollPosition / ($(document).height() - $(window).height())) * videoLength;
+	}
+
+	$(window).scroll(function(e) {
+	  scrollVideo();
+	});
+	</script>
+
+	<style>
+		*{
+			padding: 0;margin: 0;
+		}
+		html {
+		  height:100%;
+		}
+		body {
+		  height: 4000px;
+		}
+		video {
+		  position: fixed;
+		  left: 50%;
+		  top: 0;
+		  min-width: 100%;
+		  min-height: 100%;
+		  width: auto;
+		  height: auto;
+		  z-index: -100;
+		  background-size: cover;
+		  -moz-transform: translateX(-50%);
+		  transform: translateX(-50%);
+		}
+		h1 {
+		  position: fixed;
+		  top: 50%;
+		  left: 50%;
+		  width: 100%;
+		  -moz-transform: translate(-50%,-50%);
+		  transform: translate(-50%,-50%);
+		  z-index: 99;
+		  font-family: HelveticaNeue, Helvetica, sans-serif;
+		  font-size:8vmin;
+		  text-align:center;
+		  color: white;
+        }
+
+	</style>
+
+</head>
+<body>
+	
+<h1>Scroll to play video &#9658;</h1>
+<video id="video" src="http://vjs.zencdn.net/v/oceans.mp4"></video>
+
+<!-- <div id="myTurntable" class="turntable">
+    <ul>
+      <li data-img-src="images/frame.0.png"></li>
+      <li data-img-src="images/frame.1.png"></li>
+      <li data-img-src="images/frame.2.png"></li>
+      <li data-img-src="images/frame.3.png"></li>
+      <li data-img-src="images/frame.4.png"></li>
+      <li data-img-src="images/frame.5.png"></li>
+      <li data-img-src="images/frame.6.png"></li>
+      <li data-img-src="images/frame.7.png"></li>
+      <li data-img-src="images/frame.8.png"></li>
+      <li data-img-src="images/frame.9.png"></li>
+      <li data-img-src="images/frame.10.png"></li>
+      <li data-img-src="images/frame.11.png"></li>
+      <li data-img-src="images/frame.12.png"></li>
+      <li data-img-src="images/frame.13.png"></li>
+      <li data-img-src="images/frame.14.png"></li>
+      <li data-img-src="images/frame.15.png"></li>
+      <li data-img-src="images/frame.16.png"></li>
+      <li data-img-src="images/frame.17.png"></li>
+      <li data-img-src="images/frame.18.png"></li>
+      <li data-img-src="images/frame.19.png"></li>
+      <li data-img-src="images/frame.20.png"></li>
+      <li data-img-src="images/frame.21.png"></li>
+      <li data-img-src="images/frame.22.png"></li>
+      <li data-img-src="images/frame.23.png"></li>
+      <li data-img-src="images/frame.24.png"></li>
+      <li data-img-src="images/frame.25.png"></li>
+      <li data-img-src="images/frame.26.png"></li>
+      <li data-img-src="images/frame.27.png"></li>
+      <li data-img-src="images/frame.28.png"></li>
+      <li data-img-src="images/frame.29.png"></li>
+      <li data-img-src="images/frame.30.png"></li>
+      <li data-img-src="images/frame.31.png"></li>
+      <li data-img-src="images/frame.32.png"></li>
+      <li data-img-src="images/frame.33.png"></li>
+      <li data-img-src="images/frame.34.png"></li>
+      <li data-img-src="images/frame.35.png"></li>
+    </ul> -->
+
+</body>
+</html>

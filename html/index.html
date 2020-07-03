@@ -27,6 +27,19 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
   />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script>
+	function scrollVideo() {
+	  var video = $('#banner').get(0),
+	    videoLength = video.duration,
+	    scrollPosition = $(document).scrollTop();
+	  
+	  video.currentTime = (scrollPosition / (($(document).height()) - $(window).height())) * videoLength * 2;
+	}
+
+	$(window).scroll(function(e) {
+	  scrollVideo();
+	});
+	</script>
 	</head>
 	<body style='font-family: "Bai Jamjuree";' id="swup" class="noselect transition-fade">
 
@@ -51,8 +64,8 @@
         </nav>
 
 		<!-- Banner -->
-			<section id="banner">
-                <div class="inner">
+		<video id="banner" src="https://igabalte.sirv.com/Spins/360dt/360dt_single_950x950.mp4"></video>
+		<div class="inner">
                     <h1 style="font-family: 'Bai Jamjuree';">We
   <span
      class="typewrite"
