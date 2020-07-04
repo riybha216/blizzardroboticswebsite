@@ -217,5 +217,26 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
-	</body>
+			<div style="z-index: 4999;" class="fb-customerchat"
+			page_id="101231301664203"
+			minimized="false">
+		   </div>
+		   <script>
+			 window.fbAsyncInit = function() {
+			   FB.init({
+				 appId            : '912333495590130',
+				 autoLogAppEvents : true,
+				 xfbml            : true,
+				 version          : 'v2.11'
+			   });
+			 };
+		   (function(d, s, id){
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) {return;}
+				js = d.createElement(s); js.id = id;
+				js.src = "https://connect.facebook.net/en_US/sdk.js";
+				fjs.parentNode.insertBefore(js, fjs);
+			  }(document, 'script', 'facebook-jssdk'));
+		   </script>
+		</body>
 </html>
