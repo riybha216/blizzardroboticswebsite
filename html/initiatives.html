@@ -565,6 +565,26 @@
       };
     
     })(jQuery);</script>
+    <div lang="en" style="z-index: 4999;" class="fb-customerchat"
+    page_id="101231301664203"
+    minimized="true">
+     </div>
+     <script>
+     window.fbAsyncInit = function() {
+       FB.init({
+       appId            : '912333495590130',
+       autoLogAppEvents : true,
+       xfbml            : true,
+       version          : 'v2.11'
+       });
+     };
+     (function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/he_IL/sdk/xfbml.customerchat.js" ;					fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+     </script>
       <script src="node_modules\jquery\dist\jquery.min.js"></script> 
       <script src="html\Turntable\js\turntable.js"></script> 
       <script src="html\Turntable\js\turntable.min.js"></script> 
