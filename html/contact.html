@@ -89,27 +89,32 @@
                         <a href="https://www.facebook.com/blizzardftc" class="fa fa-facebook zoom" style="width: 68px;"></a></div>
 				</div>
 			</footer>
-			<div lang="en" style="z-index: 4999;" class="fb-customerchat"
-			page_id="101231301664203"
-			minimized="true">
-		   </div>
-		   <script>
-			 window.fbAsyncInit = function() {
-			   FB.init({
-				 appId            : '912333495590130',
-				 autoLogAppEvents : true,
-				 xfbml            : true,
-				 version          : 'v2.11'
-			   });
-			 };
-		   (function(d, s, id){
-				var js, fjs = d.getElementsByTagName(s)[0];
-				if (d.getElementById(id)) {return;}
-				js = d.createElement(s); js.id = id;
-				js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js" ;					
-				fjs.parentNode.insertBefore(js, fjs);
-			  }(document, 'script', 'facebook-jssdk'));
-		   </script>
+			<!-- Load Facebook SDK for JavaScript -->
+			<div id="fb-root"></div>
+			<script>
+			  window.fbAsyncInit = function() {
+				FB.init({
+				  xfbml            : true,
+				  version          : 'v7.0'
+				});
+			  };
+	  
+			  (function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+	  
+			<!-- Your Chat Plugin code -->
+			<div class="fb-customerchat"
+			  attribution=setup_tool
+			  page_id="101231301664203"
+		theme_color="#439aea"
+		logged_in_greeting="Welcome to Blizzard Robotics! Feel free to leave a message for us here!"
+		logged_out_greeting="Welcome to Blizzard Robotics! Feel free to leave a message for us here!">
+			</div>
         <!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
