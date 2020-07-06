@@ -4623,10 +4623,9 @@ img {
 .team .member .pic {
   overflow: hidden;
   transition: 0.5s;
-  filter: grayscale(85%);
 }
 
-.team .member .ab {
+/* .team .member .ab {
 	overflow: hidden;
 	transition: 0.5s;
 	background: url('images/abeer1.jpg') no-repeat;
@@ -4635,11 +4634,10 @@ img {
 .team .member .ab:hover {
 	overflow: hidden;
 	background: url('images/abeer.jpg') no-repeat;
-}
+} */
 
 .team .member .pic:hover {
 	overflow: hidden;
-	filter: grayscale(0%);
   }
 
 .team .member .member-info {
