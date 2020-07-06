@@ -1768,13 +1768,13 @@
 		 
 		/* Handle */
 		::-webkit-scrollbar-thumb {
-		  background: #5AA6ED; 
+		  background: #439aea; 
 		  border-radius: 10px;
 		}
 		
 		/* Handle on hover */
 		::-webkit-scrollbar-thumb:hover {
-		  background:#bddbf8; 
+		  background:#64acf0f6; 
 		}
 
 		::-moz-selection { /* Code for Firefox */
@@ -3057,6 +3057,11 @@ overflow: hidden;
 
 			.wrapper.style1 table.alt tbody tr td {
 				border-color: rgba(255, 255, 255, 0.25);
+			}
+
+			.wrapper.style10 {
+				background-color: #48a1f5ab;
+				color: #a6a6a6;
 			}
 
 		.wrapper.style2 {
