@@ -14,3 +14,8 @@ RewriteRule ^/?(.*)\.html$ /$1 [L,R=301]
 # check to see if the request is for a PHP file:
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^/?(.*)$ /$1.html [L]
+
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{REQUEST_URI} !^/(wp-login.php|wp-admin/|wp-content/plugins/|wp-includes/).* [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.askapache.com.*$ [NC]
+RewriteRule \.(ico|pdf|flv|jpg|jpeg|mp3|mpg|mp4|mov|wav|wmv|png|gif|swf|css|js)$ - [F,NS,L]
