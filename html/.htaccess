@@ -19,10 +19,3 @@ RewriteRule ^/?(.*)$ /$1.html [L]
 <FilesMatch *.(html|css|jpg|jpeg|png|gif|js|ico)>
     SetOutputFilter DEFLATE
 </FilesMatch>
-
-##### Set Header Vary: Accept-Encoding
-<IfModule mod_headers.c>
-    <FilesMatch ".(js|css|xml|gz|html)$">
-        Header append Vary: Accept-Encoding
-    </FilesMatch>
-</IfModule>
