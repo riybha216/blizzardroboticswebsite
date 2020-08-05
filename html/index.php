@@ -22,7 +22,7 @@ require '../templates/header.php';
 
 
 <div class="splash">
-    <h1><img id="sples"><img alt="Blizzard Robotics" src="logoanimation.gif" class="center"></h1>
+    <h1><img alt="Viewer" id="sples"><img alt="Blizzard Robotics" src="logoanimation.gif" class="center"></h1>
 </div>
 
 <!-- One -->
