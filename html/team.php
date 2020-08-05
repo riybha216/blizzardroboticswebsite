@@ -20,7 +20,7 @@ require '../templates/header.php';
 
             <div class="col-lg-4 col-md-6">
                 <div class="member">
-                    <div class="pic"><img src="images/Screen%20Shot%202020-01-15%20at%208.12.44%20PM.png"
+                    <div class="pic"><img alt="Blizzard Robotics" src="images/Screen%20Shot%202020-01-15%20at%208.12.44%20PM.png"
                                           class="img-fluid" alt=""></div>
                     <div style="font-family: 'Bai Jamjuree';" class="member-info">
                         <h4>Riya Bhatia</h4>
@@ -39,7 +39,7 @@ require '../templates/header.php';
 
             <div class="col-lg-4 col-md-6">
                 <div class="member">
-                    <div class="pic"><img src="images/Screen%20Shot%202020-01-15%20at%208.12.44%20PM.png"
+                    <div class="pic"><img alt="Blizzard Robotics" src="images/Screen%20Shot%202020-01-15%20at%208.12.44%20PM.png"
                                           class="img-fluid" alt=""></div>
                     <div style="font-family: 'Bai Jamjuree';" class="member-info">
                         <h4>Sonal Naik</h4>
@@ -57,7 +57,7 @@ require '../templates/header.php';
         <div class="responsive">
             <div class="col-lg-4 col-md-6">
                 <div class="member">
-                    <div class="pic"><img src="images/beter.png" width=250 height=300 class="img-fluid" alt=""></div>
+                    <div class="pic"><img alt="Blizzard Robotics" src="images/beter.png" width=250 height=300 class="img-fluid" alt=""></div>
                     <div style="font-family: 'Bai Jamjuree';" class="member-info">
                         <h4>Peter Xu</h4>
                         <span>Assistant Co-Lead and CAD Lead</span>
@@ -74,7 +74,7 @@ require '../templates/header.php';
         <div class="responsive">
             <div class="col-lg-4 col-md-6">
                 <div class="member">
-                    <div class="pic"><img src="images/abeer.jpg" width=250 height=300 class="img-fluid" alt=""></div>
+                    <div class="pic"><img alt="Blizzard Robotics" src="images/abeer.jpg" width=250 height=300 class="img-fluid" alt=""></div>
                     <div style="font-family: 'Bai Jamjuree';" class="member-info">
                         <h4>Abeer Bajpai</h4>
                         <span>Mechanical, Software, and Website Developer</span>
@@ -93,7 +93,7 @@ require '../templates/header.php';
             <div class="col-lg-4 col-md-6">
                 <div class="member"
                 ="fade-up" -delay="300">
-                <div class="pic"><img src="images/aaron.jpg" width=250 height=300 class="img-fluid" alt=""></div>
+                <div class="pic"><img alt="Blizzard Robotics" src="images/aaron.jpg" width=250 height=300 class="img-fluid" alt=""></div>
                 <div style="font-family: 'Bai Jamjuree';" class="member-info">
                     <h4>Aaron Li</h4>
                     <span>Software Lead, Mechanical, and Website Developer</span>
@@ -112,7 +112,7 @@ require '../templates/header.php';
             <div class="member"
             ="fade-up" -delay="300">
 
-            <div class="pic"><img src="images/everest.png" width=200 height=300 class="img-fluid" alt=""></div>
+            <div class="pic"><img alt="Blizzard Robotics" src="images/everest.png" width=200 height=300 class="img-fluid" alt=""></div>
             <div style="font-family: 'Bai Jamjuree';" class="member-info">
 
                 <h4>Everest</h4>
