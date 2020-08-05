@@ -20,11 +20,11 @@
 	  }
 
 	.noselect {
-        	-webkit-touch-callout: none;  iOS Safari /
-          	-webkit-user-select: none; / Safari /
-           	-khtml-user-select: none; / Konqueror HTML /
-             	-moz-user-select: none; / Firefox /
-              	-ms-user-select: none; / Internet Explorer/Edge /
+        	-webkit-touch-callout: none;
+          	-webkit-user-select: none;
+           	-khtml-user-select: none; 
+             	-moz-user-select: none; 
+              	-ms-user-select: none; 
                   user-select: none;
       }
 
@@ -3358,7 +3358,7 @@ overflow: hidden;
 			  }
 			  
 			  .disabled {
-				pointer-events:none; //This makes it not clickable
+				pointer-events:none;
 				opacity: 0.4;  
 				cursor: not-allowed;			}
 
@@ -3396,7 +3396,6 @@ overflow: hidden;
 				background: #ff6600;
 				color: white;
 			  }
-			  </style>
 
 		.wrapper.style3 {
 			background: rgb(0, 0, 0);
