@@ -14,10 +14,10 @@
 		
 	}
 
-@font-face {
+/* @font-face {
 		font-family: 'op';
 		src: URL('op.tff') format('truetype');
-	  }
+	  } */
 
 	.noselect {
         	-webkit-touch-callout: none;
