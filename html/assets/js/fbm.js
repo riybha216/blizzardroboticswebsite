@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(){
     window.fbAsyncInit = function () {
         FB.init({
-            xfbml: true,
+            xfbml: false,
             version: 'v2.0'
         });
     };
