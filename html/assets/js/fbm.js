@@ -1,6 +1,6 @@
 window.fbAsyncInit = function () {
     FB.init({
-        xfbml: false,
+        xfbml: true,
         version: 'v8.0'
     });
 };
@@ -12,3 +12,5 @@ window.fbAsyncInit = function () {
     js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
+
+FB.CustomerChat.hideDialog();
