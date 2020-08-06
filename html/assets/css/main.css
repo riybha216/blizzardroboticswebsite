@@ -29,6 +29,10 @@
       }
 
 
+    #facebook.svg {
+	    z-index: 4995;
+    }
+
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 		font-family: "Bam Jamjuree";
