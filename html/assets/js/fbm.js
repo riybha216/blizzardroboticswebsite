@@ -1,4 +1,4 @@
-window.addEventListener("load", function () {
+document.addEventListener("DOMContentLoaded", function(){
     window.fbAsyncInit = function () {
         FB.init({
             xfbml: true,
