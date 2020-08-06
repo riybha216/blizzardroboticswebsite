@@ -1,20 +1,16 @@
-window.fbAsyncInit = function () {
-    FB.init({
-        xfbml: true,
-        version: 'v8.0'
-    });
-};
+window.addEventListener("load", function () {
+    window.fbAsyncInit = function () {
+        FB.init({
+            xfbml: true,
+            version: 'v8.0'
+        });
+    };
 
-(function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-
-FB.Canvas.setDoneLoading(
-    function (result) {
-      alert(result.time_delta_ms);
-    }
-  );
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+});
