@@ -225,8 +225,7 @@
         </style> -->
 </head>
 
-<body id="swup" style="background-image: url(beccg.gif); font-family: 'Bai Jamjuree';"
-  class="subpage noselect transition-fade">
+<body id="swup" style="background-color: black; font-family: 'Bai Jamjuree';" class="subpage noselect transition-fade">
   <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
   <script async src="assets/js/fbm.js"></script>
@@ -273,10 +272,10 @@
   <div class="bg-image img5"></div>
   <div class="bg-image img6"></div>
 
-  <div class="bg-text">Our Design</div>
+  <div id="bgtxt" class="bg-text">Our Design</div>
 
   <!-- One -->
-  <section id="one" style="z-index: 4995; background-image: url(beccg.gif);" class="wrapper style2">
+  <section id="one" style="z-index: 4995; background-image: url(beccg.webm);" class="wrapper style2">
     <div data-aos="zoom-in-up" class="inner">
       <div class="box">
         <div class="image fit">
@@ -367,9 +366,8 @@
 
     </div>
   </section>
-  <div id="imaj" style="z-index: 4998;">
-    <div
-      style="background-image: url('beccg.gif') ;z-index: 4990; padding-bottom: 30px; padding-top: 40px; overflow: hidden;"
+  <div id="imaj" style="z-index: 4998; background-color:black;" class="box">
+    <div style="background-color: black ;z-index: 4990; padding-bottom: 30px; padding-top: 40px; overflow: hidden;"
       class="container">
       <div class="mySlides">
         <div class="numbertext">1 / 6</div>
@@ -426,7 +424,7 @@
         <p id="caption"></p>
       </div>
 
-      <div style="z-index: 4990;" class="row">
+      <div style="z-index: 4990; background-color: black;" class="row">
         <div class="column">
           <img class="demo cursor" src="images/image (1).jpg" loading="lazy" style="width:100%"
             onclick="currentSlide(1)" alt="Blizzard Team Members Peter and Abeer install the door attachments.">
@@ -643,7 +641,18 @@
       };
 
     })(jQuery);</script>
+  <script>
+    var x = document.getElementById("bgtxt");
 
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 2000) {
+        x.style.display = "none";
+      }
+      if (window.scrollY < 2000) {
+        x.style.display = "block";
+      }
+    });
+  </script>
   <script src="node_modules\jquery\dist\jquery.min.js"></script>
   <script src="html\Turntable\js\turntable.js"></script>
   <script src="html\Turntable\js\turntable.min.js"></script>
