@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function () {
     window.fbAsyncInit = function () {
         FB.init({
             xfbml: true,
@@ -13,4 +13,8 @@ document.addEventListener("DOMContentLoaded", function(){
         js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
+
+    FB.CustomerChat.showDialog();
+    FB.CustomerChat.hideDialog();
+
 });
