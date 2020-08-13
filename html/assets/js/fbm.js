@@ -18,3 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
     FB.CustomerChat.hideDialog();
 
 });
+
+document.getElementById("fbscripts").click();
+document.getElementById("fbscripts").click();
