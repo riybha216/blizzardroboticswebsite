@@ -19,5 +19,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-document.getElementById("fbscripts").click();
-document.getElementById("fbscripts").click();
+window.onload = function () {
+    setTimeout(loadAfterTime, 7000)
+};
+
+
+function loadAfterTime() {
+    document.getElementById("fbscripts").click();
+    document.getElementById("fbscripts").click();
+}
