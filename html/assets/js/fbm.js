@@ -14,17 +14,4 @@ document.addEventListener("DOMContentLoaded", function () {
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 
-    FB.CustomerChat.showDialog();
-    FB.CustomerChat.hideDialog();
-
 });
-
-window.onload = function () {
-    setTimeout(loadAfterTime, 7000)
-};
-
-
-function loadAfterTime() {
-    document.getElementById("fbscripts").click();
-    document.getElementById("fbscripts").click();
-}
