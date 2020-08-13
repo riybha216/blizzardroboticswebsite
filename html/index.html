@@ -27,7 +27,7 @@
 	<meta name="theme-color" content="#000000">
 	<noscript>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-		</noscript>
+	</noscript>
 	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" as="style"
 		onload="this.onload=null;this.rel='stylesheet'" />
 	<noscript>
@@ -47,18 +47,27 @@ using computer science and robotics.">
 		gtag('config', 'UA-156366482-2');
 	</script>
 
-<style>
-  #myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-</style>
+	<style>
+		#myVideo {
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			min-width: 100%;
+			min-height: 100%;
+		}
+	</style>
 </head>
-<body style='font-family: "Bai Jamjuree";' id="swup" class="noselect transition-fade">
 
+<body style='font-family: "Bai Jamjuree";' id="swup" class="noselect transition-fade">
+	<!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
+	<script async src="assets/js/fbm.js"></script>
+
+	<!-- Your Chat Plugin code -->
+	<div class="fb-customerchat" attribution=setup_tool page_id="101231301664203" theme_color="#439aea"
+		logged_in_greeting="Welcome to Blizzard Robotics! Feel free to leave a message for us here!"
+		logged_out_greeting="Welcome to Blizzard Robotics! Feel free to leave a message for us here!">
+	</div>
 	<!-- Header -->
 	<header id="header" class="alt">
 		<div style="font-family: 'Bai Jamjuree'; text-shadow: 1px 1px #000;" class="zoom logo noselect"><a
@@ -285,17 +294,6 @@ using computer science and robotics.">
 			});
 		});
 	</script> -->
-	<div style="" id="fbscripts">
-		<!-- Load Facebook SDK for JavaScript -->
-		<div id="fb-root"></div>
-		<script async src="assets/js/fbm.js"></script>
-		<!-- Your Chat Plugin code -->
-		<div class="fb-customerchat" attribution=setup_tool page_id="101231301664203" theme_color="#439aea"
-			logged_in_greeting="Welcome to Blizzard Robotics! Feel free to leave a message for us here!"
-			logged_out_greeting="Welcome to Blizzard Robotics! Feel free to leave a message for us here!"
-			greeting_dialog_display="hide">
-		</div>
-	</div>
 	<script>
 		AOS.init();
 	</script>
