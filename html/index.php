@@ -38,11 +38,13 @@ require '../templates/header.php';
                         <h2 style="font-family: 'Bai Jamjuree';">More than just a robotics team.</h2>
                     </header>
                     <hr/>
-                    <p style="font-family: 'Bai Jamjuree';"> Founded by three high schoolers in March 2020, FIRST Tech
-                        Challenge team Blizzard Robotics has become greater than imagined. During this unprecedented
-                        time, we hope to spread our love for robotics to the community by helping local hospitals treat
-                        their patients safely. By June, we hope to have reached over 100 hospitals and centers to help
-                        them become a safer and more confortable place for patients to be treated. </p>
+                    <p style="font-family: 'Bai Jamjuree';"> Founded by three high schoolers in March 2020, FIRST
+							Tech Challenge team Blizzard Robotics has become greater than imagined. During this
+							unprecedented time, we hope to spread our love for robotics to the community by helping
+							local hospitals treat their patients safely and providing aid to other FIRST teams. We have
+						surpassed our goal of donating 200+ door handle attachments and ear savers to those in need, and are working towards
+						innovating novel devices that can help such centers further. As a rookie team, we were also able to qualify for the NorCal
+						states championship in May 2021! </p>
                 </div>
             </div>
         </div>
